@@ -1,6 +1,7 @@
 package edu.handong.csee.java.example.fileread.benchmark;
 
 import java.io.*;
+import java.util.Scanner;
 
 /**
  * Created by sherxon on 4/23/17. https://github.com/sherxon/AlgoDS/tree/master/src/oi
@@ -10,7 +11,12 @@ public class UsingBufferedStreams {
 
             //-------------- Test reading 1 MB file. --------------------
         StopWatch.start();
-
+        String fileName = "";
+        Scanner inputSt = null;
+        inputSt = new Scanner(new File(fileName));
+        
+        
+        
         BufferedInputStream inputStream= new BufferedInputStream(new FileInputStream(new File(DumpDataWriter.input1MB)));
         while (inputStream.read()!=-1){}
 

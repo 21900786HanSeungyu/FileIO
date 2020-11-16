@@ -16,7 +16,7 @@ public class UsingBufferedReader {
        
         String filename1=args[0];
         String filename2=args[1];
-        String filename3=args[2];
+       // String filename3=args[2];
         
         BufferedReader inputStream= new BufferedReader(new FileReader(filename1));
         
@@ -43,7 +43,7 @@ public class UsingBufferedReader {
 
         
         //-------------- Test reading 100 MB file. --------------------
-
+/*
         StopWatch.start();
 
         BufferedReader inputStream3= new BufferedReader(new FileReader(filename3));
@@ -56,7 +56,7 @@ public class UsingBufferedReader {
 
 
         //-------------- Test reading 1000 MB file. --------------------
-
+        
 
         StopWatch.start();
 
@@ -67,6 +67,7 @@ public class UsingBufferedReader {
         System.out.println(duration4 + " milsec");
         
         inputStream4.close();
+        */
         
     }
 }
