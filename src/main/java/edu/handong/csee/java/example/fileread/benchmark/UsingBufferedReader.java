@@ -14,8 +14,11 @@ public class UsingBufferedReader {
 
         StopWatch.start();
        
-
-        BufferedReader inputStream= new BufferedReader(new FileReader(args[0]));
+        String filename1=args[0];
+        String filename2=args[1];
+        String filename3=args[2];
+        
+        BufferedReader inputStream= new BufferedReader(new FileReader(filename1));
         
         
         while (inputStream.read()!=-1){}
@@ -30,7 +33,7 @@ public class UsingBufferedReader {
 
         StopWatch.start();
 
-        BufferedReader inputStream2= new BufferedReader(new FileReader(DumpDataWriter.input10MB));
+        BufferedReader inputStream2= new BufferedReader(new FileReader(filename2));
         while (inputStream2.read()!=-1){}
 
         long duration2 = StopWatch.stop();
@@ -43,7 +46,7 @@ public class UsingBufferedReader {
 
         StopWatch.start();
 
-        BufferedReader inputStream3= new BufferedReader(new FileReader(DumpDataWriter.input100MB));
+        BufferedReader inputStream3= new BufferedReader(new FileReader(filename3));
         while (inputStream3.read()!=-1){}
 
         long duration3 = StopWatch.stop();
